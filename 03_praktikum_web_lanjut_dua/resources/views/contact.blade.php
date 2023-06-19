@@ -20,18 +20,40 @@
             </div>
         </div>
     </div>
+    <h4 class="text-center">Contact Us Through</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                @foreach ($contact as $data)
+                    <td>{{ $data->platform }} = </td>
+                    <td><a href="{{ $data->link }}">Our {{ $data->platform }}</a><br></td>
+                @endforeach
+            </tr>
+        </thead>
+    </table>
     
-    
-    <div class="contact">
+    {{-- <div class="contact">
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
+                {{-- <div class="col-md-7">
                     <div class="map-holder">
                         <div id="map_canvas" class="map-canvas" style="height: 360px;"></div>
                     </div>
-                </div>
+                </div> --}}
                 <div class="col-md-5">
-                    <div class="row">
+                    {{-- <table class="table">
+                        <thead>
+                            <tr>
+                                <td><h4>Contact Us Through</h4></td>
+                                <td><h4>Link</h4></td>
+                            </tr>
+                            <tr>
+                                <td>Facebook</td>
+                                <td><a href="http://id-id.facebook.com">Our Facebook</a></td>
+                            </tr>
+                        </thead>
+                    </table> --}}
+                    {{-- <div class="row">
                         <form action="#" method="post">
                             <fieldset class="col-md-6">
                                 <input type="text" name="name" placeholder="Name...">
@@ -52,11 +74,11 @@
                                 <button class="main-button">Send Message</button>
                             </fieldset>
                         </form>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 @endsection
 
 

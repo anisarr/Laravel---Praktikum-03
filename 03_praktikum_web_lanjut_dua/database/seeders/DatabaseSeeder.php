@@ -1,6 +1,10 @@
 <?php
 
 namespace Database\Seeders;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use App\Models\Product;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -18,5 +22,18 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        // $product = new Product();
+        // $data = [
+        //     'name' => 'Awesome Hat',
+        //     'price' => '3$'
+        // ];
+        // $product->create('products',$data);
+
+        DB::table('products')->insert([
+            'name' => 'Awesome Hat',
+            'price' => '3'
+        ]);
+
     }
 }

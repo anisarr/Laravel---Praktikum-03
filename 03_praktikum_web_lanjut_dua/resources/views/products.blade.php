@@ -142,4 +142,27 @@
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-holder"> Our Products </div>
+                    <div class="card-body">
+
+                        <tr>
+                            <th>Name Products</th>
+                            <th>Price</th>
+                        </tr>
+                        {{-- @foreach ($data_products as $item) --}}
+                            <tr>
+                                <td>x</td>
+                                <td>y</td>
+                            </tr>
+                        {{-- @endforeach --}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
